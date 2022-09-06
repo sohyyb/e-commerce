@@ -204,7 +204,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8px;
+  gap: 13px;
 }
 
 .container .section-1 .sides .side-2 .add-cart .control button {
@@ -215,6 +215,7 @@
   font-weight: bold;
   color: #ff7d1a;
   background-color: transparent;
+  outline: none;
 }
 
 .container .section-1 .sides .side-2 .add-cart .control button:disabled {

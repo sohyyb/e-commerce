@@ -124,7 +124,7 @@ $primary: hsl(26, 100%, 55%);
             flex: 2;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 13px;
             button {
               padding: 5px;
               border: none;
@@ -133,6 +133,7 @@ $primary: hsl(26, 100%, 55%);
               font-weight: bold;
               color: $primary;
               background-color: transparent;
+              outline: none;
               &:disabled {
                 color: #b3b3b3;
               }
