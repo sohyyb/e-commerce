@@ -27,9 +27,78 @@
   display: -ms-flexbox;
   display: flex;
   margin-left: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
 }
 
-.container .head .navs ul {
+.container .head .navs .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25px;
+  gap: 5px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container .head .navs .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+}
+
+.container .head .navs .hamburger div {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.container .head .navs .mobile {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  -webkit-box-shadow: 5px 12px 20px 0px #0000003b;
+          box-shadow: 5px 12px 20px 0px #0000003b;
+  padding: 10px;
+}
+
+.container .head .navs .mobile ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .head .navs .mobile ul li {
+  list-style: none;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.container .head .navs .mobile ul li:hover {
+  border-bottom: 2px solid #ff7d1a;
+}
+
+.container .head .navs .desktop {
   padding: 10px;
   gap: 16px;
   display: -webkit-box;
@@ -42,18 +111,18 @@
 }
 
 @media (max-width: 768px) {
-  .container .head .navs ul {
+  .container .head .navs .desktop {
     display: none;
   }
 }
 
-.container .head .navs ul li {
+.container .head .navs .desktop li {
   list-style: none;
   padding-bottom: 5px;
   cursor: pointer;
 }
 
-.container .head .navs ul li:hover {
+.container .head .navs .desktop li:hover {
   border-bottom: 2px solid #ff7d1a;
 }
 

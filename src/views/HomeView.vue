@@ -2,8 +2,25 @@
   <div class="container">
     <div class="head">
       <div class="navs">
+        <div class="hamburger" @click.prevent="showNavs = !showNavs">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <h1>sneakers</h1>
-        <ul>
+        <Transition>
+
+          <div class="mobile" v-if="showNavs">
+            <ul>
+              <li>collections</li>
+              <li>men</li>
+              <li>women</li>
+              <li>about</li>
+              <li>contact</li>
+            </ul>
+          </div>
+        </Transition>
+        <ul class="desktop">
           <li>collections</li>
           <li>men</li>
           <li>women</li>
@@ -61,6 +78,7 @@ import { ref } from 'vue';
 
 export default {
   setup() {
+    const showNavs = ref(false)
     const count = ref(1)
     const image = ref(1);
     const image_url = ref("/pic/image-product-1.jpg")
@@ -72,9 +90,20 @@ export default {
       image,
       image_url,
       changePic,
-      count
+      count,
+      showNavs
     }
   }
 }
 </script>
-    
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
