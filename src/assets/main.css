@@ -1,7 +1,7 @@
 @import url("https://fonts.google.com/specimen/Kumbh+Sans");
 * {
   padding: 0;
-  margin: 0px;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Kumbh Sans", sans-serif;
@@ -19,6 +19,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 10px;
 }
 
 .container .head .navs {
@@ -29,6 +30,8 @@
 }
 
 .container .head .navs ul {
+  padding: 10px;
+  gap: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,6 +171,7 @@
   font-size: 26px;
   font-weight: bold;
   display: block;
+  margin-top: 20px;
 }
 
 .container .section-1 .sides .side-2 .price .discount {
@@ -187,15 +191,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 40px;
 }
 
 .container .section-1 .sides .side-2 .add-cart .control {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
 }
 
 .container .section-1 .sides .side-2 .add-cart .control button {
+  padding: 5px;
   border: none;
   cursor: pointer;
   font-size: 18px;
@@ -227,6 +240,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 48px;
 }
 
 .container .section-1 .sides .side-2 .add-cart .add:hover {

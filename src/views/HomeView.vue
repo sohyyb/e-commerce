@@ -12,8 +12,8 @@
         </ul>
       </div>
       <div class="profile">
-        <img class="cart" src="../assets/pic/icon-cart.svg">
-        <img class="avatar" src="../assets/pic/image-avatar.png">
+        <img class="cart" src="/pic/icon-cart.svg">
+        <img class="avatar" src="/pic/image-avatar.png">
       </div>
     </div>
     <div class="section-1">
@@ -21,14 +21,14 @@
         <div class="side-1">
           <img :src="image_url" :class="{ active: image == 1 }" alt="">
           <div class="images">
-            <img @click.prevent="changePic('/src/assets/pic/image-product-1.jpg', 1)"
-              src="../assets/pic/image-product-1.jpg" :class="{ active: image == 1 }" alt="">
-            <img @click.prevent="changePic('/src/assets/pic/image-product-2.jpg', 2)"
-              src="../assets/pic/image-product-2.jpg" :class="{ active: image == 2 }" alt="">
-            <img @click.prevent="changePic('/src/assets/pic/image-product-3.jpg', 3)"
-              src="../assets/pic/image-product-3.jpg" :class="{ active: image == 3 }" alt="">
-            <img @click.prevent="changePic('/src/assets/pic/image-product-4.jpg', 4)"
-              src="../assets/pic/image-product-4.jpg" :class="{ active: image == 4 }" alt="">
+            <img @click.prevent="changePic('/pic/image-product-1.jpg', 1)" src="/pic/image-product-1.jpg"
+              :class="{ active: image == 1 }" alt="">
+            <img @click.prevent="changePic('/pic/image-product-2.jpg', 2)" src="/pic/image-product-2.jpg"
+              :class="{ active: image == 2 }" alt="">
+            <img @click.prevent="changePic('/pic/image-product-3.jpg', 3)" src="/pic/image-product-3.jpg"
+              :class="{ active: image == 3 }" alt="">
+            <img @click.prevent="changePic('/pic/image-product-4.jpg', 4)" src="/pic/image-product-4.jpg"
+              :class="{ active: image == 4 }" alt="">
           </div>
         </div>
         <div class="side-2">
@@ -49,7 +49,7 @@
               <span>{{ count }}</span>
               <button @click.prevent="count++">+</button>
             </div>
-            <button class="add"><img class="cart" src="../assets/pic/icon-cart.svg">Add To Cart</button>
+            <button class="add"><img class="cart" src="/pic/icon-cart.svg">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default {
   setup() {
     const count = ref(1)
     const image = ref(1);
-    const image_url = ref("/src/assets/pic/image-product-1.jpg")
+    const image_url = ref("/pic/image-product-1.jpg")
     const changePic = (path, index) => {
       image_url.value = path
       image.value = index
