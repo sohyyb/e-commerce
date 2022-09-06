@@ -132,6 +132,7 @@ $primary: hsl(26, 100%, 55%);
               font-size: 18px;
               font-weight: bold;
               color: $primary;
+              background-color: transparent;
               &:disabled {
                 color: #b3b3b3;
               }

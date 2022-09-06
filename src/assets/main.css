@@ -214,6 +214,7 @@
   font-size: 18px;
   font-weight: bold;
   color: #ff7d1a;
+  background-color: transparent;
 }
 
 .container .section-1 .sides .side-2 .add-cart .control button:disabled {
